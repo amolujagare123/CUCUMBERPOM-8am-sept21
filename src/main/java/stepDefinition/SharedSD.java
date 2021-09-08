@@ -25,7 +25,7 @@ public class SharedSD {
     @After
     public void closeBrowser()
     {
-        driver.close();
+       // driver.close();
     }
 
 
