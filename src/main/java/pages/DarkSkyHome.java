@@ -21,6 +21,13 @@ public class DarkSkyHome extends Base{
     By timelineHighTemp = By.xpath("//div[@class='dayDetails revealed']//span[@class='lowTemp swap']//span[@class='temp']");
     By timelineLowTemp = By.xpath("//div[@class='dayDetails revealed']//span[@class='highTemp swip']//span[@class='temp']");
 
+    By darkskyAPI = By.xpath("//a[normalize-space()='Dark Sky API']");
+
+    public void clickDarkSkyAPI()
+    {
+        clickOn(darkskyAPI);
+    }
+
     public ArrayList<String> getBarTempList()
     {
         String minTemp = getTextFromElement(barMinTemp).split("˚")[0];
