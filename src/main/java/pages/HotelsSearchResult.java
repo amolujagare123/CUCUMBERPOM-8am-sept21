@@ -16,6 +16,7 @@ public class HotelsSearchResult extends Base{
     By hotelList = By.xpath("//span[contains(@class,'sr-hotel__name')]");
 
 
+
     public ArrayList<String> getHotelList() {
 
        return getElementTextList(hotelList);
